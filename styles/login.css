@@ -51,9 +51,9 @@ section{
     display: flex;
     justify-content: center;
 align-items: center;
-min-height: 100vh;
+  height: 665px;
 width: 100%;
-background: url(milky-way-2695569_1280.jpg)no-repeat;
+background: url(../img/milky-way-2695569_1280.jpg)no-repeat;
 background-position: center;
 background-size: cover;
 
@@ -155,24 +155,115 @@ font-weight: 600;
 .register p a:hover{
     text-decoration: underline;
 }
+footer{
+  width: 100%;
+  margin: auto;
+}
+ .flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 15px;
+
+
+}
+.by { 
+  text-align: center;
+  order:1;
+  flex-grow:0;
+  flex-shrink:1;
+  align-self:auto;
+  margin-left: 45px;
+}
+.by span{
+  color: grey;
+  opacity: 0.5;
+}
+    
+.redes { 
+  order:2;
+  margin-right: px;
+}
+.redes a img{
+  padding-top: 50px;
+  padding-right: 40px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+    
+.info { 
+  order:3;
+  color: white;
+  font-size: 20px;
+  display: grid;
+}
 
 @media (max-width: 767px) {
+  body{
+    width: 570px;
+  }
   section {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
+  }
   .img {
     order: 1;
     padding-bottom: 50px;
-    margin-left: 600px;
+    margin-left: 0px;
+    margin-right: 150px;
   }
 
   .form-box {
     order: 2;
-    width: 100%;
+    padding-right: 120px;
+    padding-left: 500px;
   }
+ 
+  .by {
+    margin-left: 0;
+  }
+
+  .redes a img {
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  footer .flex-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  footer .by {
+    margin-bottom: 10px;
+  }
+
+  footer .redes {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  footer .redes a img {
+    padding: 10px;
+  }
+
+  footer .info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px){
+  .form-box{
+    margin-right: 150px;
+    margin-left: -250px;
+  }
+  .img {
+    margin-left: 150px;
+  }
+
 }
 
 

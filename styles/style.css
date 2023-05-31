@@ -13,7 +13,7 @@
   background-color: black; 
   position: sticky; 
   text-align: center; 
-  width: 75%; 
+  width: 95%; 
   margin: auto;
   z-index: 100;
   border-radius: 10px;
@@ -154,6 +154,53 @@ padding-top: 70px;
 
 }
 
+/**//**//**//**//**//*FOOTER*//**//**//**//**//**//**//**//**//**/
+  footer{
+    width: 95%;
+    margin: auto;
+  }
+   .flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+
+  }
+  .by { 
+    text-align: center;
+    order:1;
+    flex-grow:0;
+    flex-shrink:1;
+    align-self:auto;
+    margin-left: 45px;
+  }
+  .by span{
+    color: grey;
+    opacity: 0.5;
+  }
+			
+  .redes { 
+    order:2;
+    margin-right: px;
+  }
+  .redes a img{
+    padding-top: 50px;
+    padding-right: 40px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+			
+  .info { 
+    order:3;
+    color: white;
+    font-size: 20px;
+    display: grid;
+  }
+			
+    
+
 /**//**//**//**//**//*MEDIA*//**//**//**//**//**/
 /**//**//**//**//*Mobile*//**//**//**/
 
@@ -163,7 +210,7 @@ padding-top: 70px;
     position: static;
   }
   ul li a {
-    margin-left: -50px;
+    margin-left: -20px;
 
   }
   #noticias .not-item-izq {
@@ -204,7 +251,189 @@ padding-top: 70px;
     margin: 0 auto;
     padding-top: 10px;
   }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .by {
+    text-align: center;
+    order: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
+    align-self: auto;
+    margin-left: 45px;
+  }
+  
+  .by span {
+    color: grey;
+    opacity: 0.5;
+  }
+  
+  .redes {
+    order: 2;
+    margin-right: 0;
+  }
+  
+  .redes a img {
+    padding-top: 50px;
+    padding-right: 40px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .info {
+    order: 3;
+    color: white;
+    font-size: 20px;
+    display: grid;
+  }
+  
+    .flex-container {
+      flex-direction: column;
+    }
+    
+    .by {
+      order: 1;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    
+    .redes {
+      order: 2;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-right: -70px;
+      margin-left: -30px;
+    }
+    
+    .info {
+      order: 3;
+    }
 }
+@media (max-width: 768px) {
+  footer .flex-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  footer .by {
+    margin-bottom: 10px;
+  }
+
+  footer .redes {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  footer .redes a img {
+    padding: 10px;
+  }
+
+  footer .info {
+    text-align: center;
+  }
+ 
+    .barra {
+      padding: 10px;
+    }
+  
+    .barra a {
+      font-size: 24px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .fondo1 {
+      width: 85%;
+    }
+  
+    .not-cont,
+    .not-contt {
+      padding: 0;
+    }
+  
+    #noticias .not-img-izq,
+    #noticias .not-img-der img {
+      margin-right: 0;
+      margin-left: 0;
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+  
+    .color {
+      width: 90%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .by {
+      margin-left: 0;
+    }
+  
+    .redes a img {
+      padding-top: 10px;
+      padding-right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .barra {
+      padding: 10px;
+    }
+  
+    .barra a {
+      font-size: 24px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .fondo1 {
+      width: 85%;
+    }
+    #noticias .not-cont{
+      margin-left: -150px;
+      margin-right: -130px;
+    }
+    #noticias .not-contt{
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  
+    #noticias .not-img-izq,
+    #noticias .not-img-der img {
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+  
+    .color {
+      width: 90%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .by {
+      margin-left: 0;
+    }
+  
+    .redes a img {
+      padding-top: 10px;
+      padding-right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+
+
 
 
 
