@@ -9,5 +9,5 @@ loginForm.addEventListener('submit', (e) =>{
         return alert('Usuario y/o contraseña incorrectos')
     }
     alert(`Bienvenido ${validUser.name}`)
-    window.location.href = 'index.html'
+    window.location.href = '../pages/index.html'
 })

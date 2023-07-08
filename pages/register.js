@@ -9,9 +9,10 @@ register.addEventListener('submit', (e)=>{
     const isUserRegistered = Users.find(user => user.email === email)
     if(isUserRegistered){
         return alert('El usuario ya está registrado!')
+        window.location.href = 'index.html'
     }
     Users.push({name: name, email: email, password: password})
     localStorage.setItem('users', JSON.stringify(Users))
     alert('Regisro exitoso')
-    window.location.href = 'login.html'
+    window.location.href = 'index.html'
 });
